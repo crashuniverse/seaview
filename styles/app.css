@@ -1,0 +1,62 @@
+div {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.picture {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.picture > img {
+  width: 120px;
+  height: 120px;
+  border: solid 1px #cccccc;
+  border-radius: 100%;
+}
+
+.name-section {
+  display: flex;
+}
+
+.personal-details > .name-section {
+  margin-bottom: 10px;
+}
+
+.personal-details .name {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.timeline {
+  display: flex;
+  padding: 20px;
+}
+
+.timeline > .column {
+  width: 50%;
+}
+
+.employment {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.achievement {
+  margin-bottom: 10px;
+}
