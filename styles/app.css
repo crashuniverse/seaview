@@ -2,6 +2,10 @@ div {
   box-sizing: border-box;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
+
 .container {
   margin: 0 auto;
   width: 1200px;
@@ -40,6 +44,19 @@ div {
   margin-top: 25px;
 }
 
+.header .contact {
+  text-align: right;
+}
+
+.header .contact > div {
+  margin-bottom: 5px;
+}
+
+.header .contact .fa {
+  display: inline-block;
+  width: 12px;
+}
+
 .timeline {
   display: flex;
   padding: 20px;
@@ -49,8 +66,20 @@ div {
   width: 50%;
 }
 
+.timeline > .column:first-child {
+  margin-right: 60px;
+}
+
 .employment {
   margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.employment .fa {
+  display: inline-block;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 1px;
 }
 
 .bold {
