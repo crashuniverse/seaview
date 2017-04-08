@@ -9,7 +9,7 @@ body {
 .container {
   margin: 0 auto;
   width: 1200px;
-  padding: 10px;
+  padding: 10px 40px;
 }
 
 .header {
@@ -40,8 +40,16 @@ body {
 
 .personal-details .name {
   font-size: 32px;
-  font-weight: bold;
   margin-top: 25px;
+}
+
+.personal-details .punchline {
+  font-size: 18px;
+  color: #397e86;
+}
+
+.fa {
+  color: #397e86;
 }
 
 .header .contact {
@@ -71,7 +79,7 @@ body {
 }
 
 .employment {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-left: 10px;
 }
 
