@@ -9,38 +9,52 @@ body {
 .container {
   margin: 0 auto;
   width: 1200px;
-  padding: 10px 40px;
+  padding: 10px 0;
+}
+
+@media screen {
+  .container {
+    outline: solid 1px #cccccc;
+  }
+}
+
+a, a:active, a:hover, a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
-.picture {
+.personal-details > .name-section {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.picture-container {
   display: inline-block;
   padding-right: 20px;
 }
 
-.picture > img {
-  width: 120px;
-  height: 120px;
+.picture-container > img {
+  width: 160px;
+  height: 160px;
   border: solid 1px #cccccc;
   border-radius: 100%;
 }
 
-.name-section {
+.name-container {
   display: flex;
-}
-
-.personal-details > .name-section {
-  margin-bottom: 10px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .personal-details .name {
-  font-size: 32px;
-  margin-top: 25px;
+  font-size: 42px;
 }
 
 .personal-details .punchline {
@@ -57,7 +71,7 @@ body {
 }
 
 .header .contact > div {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .header .contact .fa {
@@ -67,7 +81,7 @@ body {
 
 .timeline {
   display: flex;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .timeline > .column {
@@ -79,7 +93,7 @@ body {
 }
 
 .employment {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   margin-left: 10px;
 }
 
@@ -90,8 +104,50 @@ body {
   margin-top: 1px;
 }
 
-.bold {
+.employment .role,
+.education .course {
+  font-size: 18px;
   font-weight: bold;
+}
+
+.employment .organisation,
+.education .university {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.landscape {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #397e86;
+}
+
+.org-description {
+  font-size: 14px;
+  color: #696969;
+}
+
+.employment .contact {
+  font-size: 14px;
+}
+
+.employment .label {
+  color: #397e86;
+}
+
+.bold {
+  margin-top: 10px;
+  color: #397e86;
+}
+
+.tasks {
+  margin-bottom: 10px;
+}
+
+.subject {
+  display: inline-block;
+  width: 50%;
 }
 
 .achievement {
