@@ -40,11 +40,13 @@ a, a:active, a:hover, a:visited {
   padding-right: 20px;
 }
 
-.picture-container > img {
+.picture-container > .img {
   width: 160px;
   height: 160px;
   border: solid 1px #cccccc;
   border-radius: 100%;
+  background: url('../images/priya-ranjan-singh-photograph.jpg') -10px -10px;
+  background-size: 115%;
 }
 
 .name-container {
@@ -148,6 +150,10 @@ a, a:active, a:hover, a:visited {
 .subject {
   display: inline-block;
   width: 50%;
+}
+
+.project {
+  margin-top: 10px;
 }
 
 .achievement {
